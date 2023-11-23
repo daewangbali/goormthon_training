@@ -1,0 +1,131 @@
+* {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+body {
+    color: black;
+    background-color: rgb(255, 225, 234);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}
+
+.app {
+    width: 100%;
+    max-width: 768px;
+}
+
+.app header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.app header h1 {
+    font-family: 'Source Code Pro', monospace;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.app header button {
+    font-family: 'Source Code Pro', monospace;
+    color: pink;
+    padding: 5px;
+    font-size: 18px;
+    background-color: rgb(0, 0, 65);
+    text-transform: uppercase;
+}
+.app header button:hover {
+    color: rgb(255, 69, 125);
+}
+
+.app header button:active {
+    color: rgb(255, 151, 182);
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-size: cover;
+    background-position-y: 65%;
+    background-color: pink;
+    box-shadow: 0 0 13px rgba(229, 213, 255, 0.4);
+    margin-bottom: 1.5rem;
+}
+
+.item:last-of-type {
+    margin-bottom: 0;
+}
+
+.item input[type="checkbox"] {
+    margin-right: 1rem;
+}
+
+.item input[type="text"] {
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 400;
+    color: rgb(61, 61, 61);
+    font-size: 20px;
+    flex: 1 1 0%;
+    margin-right: 1rem;
+}
+
+.item input[type="text"]:focus {
+    caret-color: rgb(61, 61, 61);
+    background-color: rgba(240, 248, 255, 0.15);
+}
+
+.item.complete {
+    opacity: 0.6;
+}
+
+.item.complete input[type="text"] {
+    text-decoration: line-through;
+    border-bottom: 0;
+}
+
+.item:hover,
+.item:focus-within {
+    box-shadow: 0 0 10px rgb(0, 0, 65)
+}
+
+.actions button {
+    color: rgb(253, 128, 180);
+    margin-right: 1rem;
+    opacity: 0.8;
+    transform: 0.1s;
+}
+
+.actions button.remove-btn {
+    color: rgb(253, 128, 180);
+}
+
+.actions button:hover {
+    opacity: 1;
+}
+
+.actions button:last-of-type {
+    margin-right: 0;
+}
