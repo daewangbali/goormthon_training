@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Finder</title>
+    <link rel="shortcut icon" href="assets/img/github-mark.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="github-mark">
+            <a href="#"><img src="assets/img/github-mark.png" alt="github-mark"></a>
+        </div>
+        <h1>Github Finder</h1>
+    </header>
+    <main>
+        <div id="searchBox">
+            <div id="searchTitle">
+                <h2>Search GitHub Users</h2>
+            <p>Enter a username to fetch a user profile and repos</p>
+            </div>
+            <div id="searchZone">
+                <input type="text" id="username" placeholder="Enter GitHub Username...">
+                <button id="searchButton">Search</button>
+            </div>   
+        </div>
+        <div id="results">
+            <div id="octocat">
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 GitHub-Finder, Inc.</p>
+    </footer>
+
+    <script src="src/app.js"></script>
+    <script src="src/github.js"></script>
+    <script src="src/ui.js"></script>
+</body>
+</html>
